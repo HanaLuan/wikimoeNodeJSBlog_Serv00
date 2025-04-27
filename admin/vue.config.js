@@ -7,6 +7,7 @@ module.exports = defineConfig({
   publicPath: process.env.NODE_ENV === "production" ? "/admin/" : "/",
   // 不生成map文件，根据build还是dev环境来
   productionSourceMap: process.env.NODE_ENV === "production" ? false : true,
+  parallel: false,  // Serv00 對進程數量有限制
   devServer: {
     client: {
       overlay: false,
