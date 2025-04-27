@@ -201,6 +201,14 @@ IP2LOCATION_FILE_NAME="地址解析用到的BIN文件，切记一定要下载【
 MAX_HISTORYLOGS_SIZE="日志集合的最大占用空间，单位字节默认1073741824（1GB）"
 ```
 
+##### 配置數據庫
+
+需要在 `https://panel<PanelID>.serv00.com/mongo/` 添加一個, DB_HOST 填寫方式
+
+```env
+DB_HOST="mongodb://mo3833_<userDefineDBName>:<Password>@mongo<PanelID>.serv00.com:27017/mo3833_<userDefineDBName>?authSource=mo3833_<userDefineDBName>"
+```
+
 **关于 IP2LOCATION 文件**
 
 - 请自行在[IP2Location Lite](https://lite.ip2location.com/)网站注册下载 BIN 文件。
